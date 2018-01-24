@@ -1,4 +1,5 @@
 fork test
+"Knowledge is power!"
 Oscar Standards
 ===============
 
