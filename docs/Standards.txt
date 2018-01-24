@@ -9,7 +9,7 @@ Coding Standards
 
 -No System.out or System.err can be used in the committed code.  Use the logger instead (Code_Logging.txt)
 -No printStackTrace can be used in the committed code. Use the logger instead (Code_Logging.txt)
-
+-Separate function calls with 2 lines of white space between them.
 
 
 How to Report a Bug
