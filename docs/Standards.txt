@@ -1,4 +1,10 @@
+<<<<<<< HEAD
 "fork test
+=======
+Goh's Edit
+fork test
+"Knowledge is power!"
+>>>>>>> ea3994b91fd6c652f0440c6249213c5cb3427334
 Oscar Standards
 ===============
 
@@ -8,7 +14,7 @@ Coding Standards
 
 -No System.out or System.err can be used in the committed code.  Use the logger instead (Code_Logging.txt)
 -No printStackTrace can be used in the committed code. Use the logger instead (Code_Logging.txt)
-
+-Separate function calls with 2 lines of white space between them.
 
 
 How to Report a Bug
