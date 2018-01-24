@@ -1,6 +1,7 @@
 Goh's Edit
 fork test
-"Knowledge is power!"
+"knownledge is power"
+"i think therefore i am"
 Oscar Standards
 ===============
 
