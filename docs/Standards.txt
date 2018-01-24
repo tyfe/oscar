@@ -84,7 +84,7 @@ How to submit a bug fix/feature request
 A patch can be submitted to the mailing list or one of the developers with commit access.
 """"""
 
-
+"this is some text"
 
 
 
