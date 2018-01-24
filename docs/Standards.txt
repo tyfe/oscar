@@ -3,9 +3,14 @@
 =======
 Goh's Edit
 fork test
+<<<<<<< HEAD
+"knownledge is power"
+"i think therefore i am"
+=======
 fork change
 "Knowledge is power!"
 >>>>>>> ea3994b91fd6c652f0440c6249213c5cb3427334
+>>>>>>> 083dc67d470a3fd6b61666909976b90eedaede7e
 Oscar Standards
 
 big ol chicken
