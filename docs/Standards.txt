@@ -6,6 +6,7 @@ fork test
 fork change
 "Knowledge is power!"
 Potatoes are good food
+This is a test branch change
 >>>>>>> ea3994b91fd6c652f0440c6249213c5cb3427334
 Oscar Standards
 
