@@ -1,8 +1,9 @@
 Goh's Edit
 fork test
 fork change
+"Knowledge is power!"
 Oscar Standards
-===============
+
 
 
 Coding Standards
