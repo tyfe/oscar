@@ -1,5 +1,6 @@
 Goh's Edit
 fork test
+"Knowledge is power!"
 Oscar Standards
 ===============
 
