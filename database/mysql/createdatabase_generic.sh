@@ -12,7 +12,7 @@ LOCATION=$4
 # should be "9" or "10" corresponding to the icdXX.sql qualifier
 ICD=$5
 
-mysqladmin -u${USER} -p$PASSWORD create $DATABASE_NAME
+mysql -u${USER} -p$PASSWORD -e "CREATE DATABASE $DATABASE_NAME DEFAULT CHARACTER SET utf8 DEFAULT COLLATE utf8_general_ci;"
 echo "grant all on ${DATABASE_NAME}.* to ${USER}@localhost identified by \"$PASSWORD\"" |  mysql -u${USER} -p$PASSWORD  $DATABASE_NAME
 
 echo loading oscarinit.sql...
