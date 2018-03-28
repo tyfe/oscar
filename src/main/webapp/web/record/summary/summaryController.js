@@ -326,6 +326,7 @@ function getLeftItems(){
 	summaryService.getSummaryHeaders($stateParams.demographicNo,'left').then(function(data){
 		  console.log("left",data);
 		  $scope.page.columnOne.modules = data;
+            // TODO change here to make error happen (i.e., change allergies or something)
 	      fillItems($scope.page.columnOne.modules);
     	},
     	function(errorMessage){
@@ -359,9 +360,22 @@ function fillItems(itemsToFill){
 	for (var i = 0; i < itemsToFill.length; i++) {
 		console.log(itemsToFill[i].summaryCode);
 		summaryLists[itemsToFill[i].summaryCode] = itemsToFill[i];
+
+		// creating a function to create a closure that binds the value of the summary code
+		var f = function(code, errorMessage) {
+			return function(errorMessage){
+                console.log("fillItems" + errorMessage);
+                var $error = $("#error-" + code);
+                $error.css("display", "inline");
+                $error.text(errorMessage);
+            }
+		}
+
+		var errorFunction = f(itemsToFill[i].summaryCode);
+
 	 
 		summaryService.getFullSummary($stateParams.demographicNo,itemsToFill[i].summaryCode).then(function(data){
-			console.log("FullSummary returned ",data);
+			    console.log("FullSummary returned ",data);
 				if(angular.isDefined(data.summaryItem)){
 	 				if(data.summaryItem instanceof Array){
 	 					summaryLists[data.summaryCode].summaryItem = data.summaryItem;
@@ -369,11 +383,7 @@ function fillItems(itemsToFill){
 	 					summaryLists[data.summaryCode].summaryItem = [data.summaryItem];
 	 				}
 				}
-			},
-			function(errorMessage){
-				console.log("fillItems"+errorMessage); 
-			}
-			 
+			}, errorFunction
 		);
 	}
 }
